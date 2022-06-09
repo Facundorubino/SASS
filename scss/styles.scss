@@ -1,0 +1,79 @@
+// comentario en sass
+/* comentario en sass y css */
+
+/*Importar Tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//variables
+$color-nav: #FFFFFF;
+$color-text: black;
+$margin-bottom-text: 1rem;
+$margin-text: 10px;
+$padding-nav: 5px;
+
+
+// nesting
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Porpiedades Navbar*/ 
+header{
+    .nav.justify-content-center{
+        background-color: $color-nav;
+        padding: $padding-nav;
+    }
+    .nav.justify-content-center a {
+        color: $color-text;
+        text-decoration: none;
+    }
+}
+
+/*Propiedades bg-home*/
+.bg-home{
+    background-image: url(../images/home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Propiedades Main*/ 
+
+main{
+       .jumbotron{
+        display: grid;
+        align-items: center;
+        height: 100vh;
+    }
+
+ .container{  
+
+     h1{
+     font-size: 34px;
+     color: $color-text;
+     margin-bottom: $margin-bottom-text;
+     margin: $margin-text;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: 200;
+        color: $color-text;
+        margin-bottom: $margin-bottom-text;
+        margin: $margin-text;
+    }
+
+    }
+}
+
+
+    /*Porpiedades Footer*/ 
+footer{
+    .nav.justify-content-center{
+        background-color: $color-nav;
+        padding: $padding-nav;
+    }
+    .nav.justify-content-center a {
+        color: $color-text;
+        text-decoration: none;
+    }
+}
